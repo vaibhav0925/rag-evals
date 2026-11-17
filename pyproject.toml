@@ -1,0 +1,28 @@
+[project]
+name = "rag-evals"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Vaibhav Shukla", email = "vaibhav.shukla0925@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chromadb>=1.5.9",
+    "deepeval>=4.3.4",
+    "langchain-chroma>=1.1.0",
+    "langchain-core>=1.8.1",
+    "langchain-openai>=1.8.0",
+    "langchain-text-splitters>=1.1.3",
+    "openai>=3.52.0",
+    "pytest>=9.2.0",
+    "python-dotenv>=1.2.4",
+    "sentence-transformers>=6.3.0",
+]
+
+[project.scripts]
+rag-evals = "rag_evals:main"
+
+[build-system]
+requires = ["uv_build>=0.12.24,<0.13.0"]
+build-backend = "uv_build"
